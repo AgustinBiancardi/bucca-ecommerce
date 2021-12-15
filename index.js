@@ -168,7 +168,7 @@ if (obtenerProductos.length !== 0) {
     total += parseFloat(producto.precio * producto.carrito);
     $("#carritoProductos").append(`
         <article class="producto" id = "${producto.nombre}">
-        <img src="imagenes/${nombreImagen}.jpg">
+        <img src="Imagenes/${nombreImagen}.jpg">
         <h3> ${producto.nombre} </h3>
         <p class = "${producto.nombre}carrito">X ${producto.carrito}</p>
         <button id="${producto.id}" class="btnEliminar">Eliminar</button>
