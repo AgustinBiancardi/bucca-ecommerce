@@ -102,7 +102,7 @@ function mostrarProductos(productosEncontrados) {
     contenedor.innerHTML = `
         <article class="producto transicion>
             <input value= "${producto.id}" type="hidden">
-            <img src="imagenes/${nombreImagen}.jpg">
+            <img src="Imagenes/${nombreImagen}.jpg">
             <span>$${producto.precio}</span>
             <h3> ${producto.nombre} </h3>
             <button class = "btnComprar" id="${producto.id}">Comprar</button>
