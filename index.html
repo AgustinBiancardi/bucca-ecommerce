@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Despensa | Bucca</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="menu">
+        <head class="encabezado">
+            <h1> Bucca-Comerce </h1>
+        </head>
+        
+        <nav>
+            <article class="ordenar">
+                <select name="select" onchange="ordenarProductos(value)" >
+                    <option  value="menor">Menor precio</option>
+                    <option value="mayor" selected>Mayor precio</option>
+                </select>
+            </article>
+            
+            <article class="buscador">
+                <label>Nombre del producto:</label>
+                <input type="text" id="nombre-producto">
+                <input type="button" value="Buscar" id="buscarProducto">
+            </article>
+            
+            <article class="links">
+                <a href="index.html" style="float: right;">Inicio</a>
+                <a href="login.html" style="float: right;">Login</a>
+                <a href="registrarse.html" style="float: right;">Registrarse</a>
+                <button class="verCarrito">Ver carrito</button>
+            </article>
+            
+        </nav>
+    </div>
+     
+
+    <section id="productos">
+
+        <article class="producto transicion" >
+            <input value="1" type="hidden">
+            <img src="imagenes/agua-mineral.jpg">
+            <span>$90</span>
+            <h3> Agua Mineral </h3>
+            <button id="1" class="btnComprar">Comprar</button>
+            <p style="display: none;" id="oculto1">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion" >
+            <input value="2" type="hidden">
+            <img src="imagenes/fideos.jpg">
+            <span>$70</span>
+            <h3> Fideos </h3>
+            <button  class="btnComprar" id="2">Comprar</button>
+            <p style="display: none;" id="oculto2">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion" >
+            <input value="3" type="hidden">
+            <img src="imagenes/galletitas-de-agua.jpg">
+            <span>$35</span>
+            <h3> Galletitas de Agua </h3>
+            <button  class="btnComprar" id="3">Comprar</button>
+            <p style="display: none;" id="oculto3">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="4" type="hidden">
+            <img src="imagenes/queso-rallado.jpg">
+            <span>$50</span>
+            <h3> Queso Rallado </h3>
+            <button class="btnComprar" id="4">Comprar</button>
+            <p style="display: none;" id="oculto4">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion" >
+            <input value="5" type="hidden">
+            <img src="imagenes/arroz.jpg">
+            <span>$35</span>
+            <h3> Arroz </h3>
+            <button class="btnComprar" id="5">Comprar</button>
+            <p style="display: none;" id="oculto5">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="6" type="hidden">
+            <img src="imagenes/harina.jpg">
+            <span>$20</span>
+            <h3> Harina </h3>
+            <button class="btnComprar" id="6">Comprar</button>
+            <p style="display: none;" id="oculto6">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion" >
+            <input value="7" type="hidden">
+            <img src="imagenes/jamon.jpg">
+            <span>$15</span>
+            <h3> Jamón </h3>
+            <button class="btnComprar" id="7">Comprar</button>
+            <p style="display: none;" id="oculto7">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="8" type="hidden">
+            <img src="imagenes/jugo-de-naranja.jpg">
+            <span>$40</span>
+            <h3> Jugo de Naranja </h3>
+            <button class="btnComprar"  id="8">Comprar</button>
+            <p style="display: none;" id="oculto8">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="9" type="hidden">
+            <img src="imagenes/coca-cola.jpg">
+            <span>$90</span>
+            <h3> Coca Cola </h3>
+            <button class="btnComprar" id="9">Comprar</button>
+            <p style="display: none;" id="oculto9">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="10" type="hidden">
+            <img src="imagenes/galletitas-oreo.jpg">
+            <span>$70</span>
+            <h3> Galletitas Oreo </h3>
+            <button class="btnComprar" id="10">Comprar</button>
+            <p style="display: none;" id="oculto10">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion">
+            <input value="11" type="hidden">
+            <img src="imagenes/galletitas-pepitos.jpg">
+            <span>$60</span>
+            <h3> Galletitas Pepitos </h3>
+            <button class="btnComprar"  id="11">Comprar</button>
+            <p style="display: none;" id="oculto11">El producto se agregó al carrito!</p>
+        </article>
+
+        <article class="producto transicion" >
+            <input value= "12" type="hidden">
+            <img src="imagenes/aceite.jpg">
+            <span>$50</span>
+            <h3> Aceite </h3>
+            <button class="btnComprar" id="12">Comprar</button>
+            <p style="display: none;" id="oculto12">El producto se agregó al carrito!</p>
+        </article>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+</body>
+</html>

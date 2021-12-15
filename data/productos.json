@@ -1,0 +1,75 @@
+[
+    {
+        "nombre": "agua Mineral",
+        "precio": 90,
+        "stock": "5",
+        "id":1
+    },
+    {
+        "nombre": "fideos",
+        "precio": 70,
+        "stock": "10",
+        "id":2
+    },
+    {
+        "nombre": "galletitas de agua",
+        "precio": 35,
+        "stock": "3",
+        "id":3
+    },
+    {
+        "nombre": "queso rallado",
+        "precio": 50,
+        "stock": "7",
+        "id":4
+    },
+    {
+        "nombre": "arroz",
+        "precio": 35,
+        "stock": "15",
+        "id":5
+    },
+    {
+        "nombre": "harina",
+        "precio": 20,
+        "stock": "20",
+        "id":6
+    },
+    {
+        "nombre": "jamon",
+        "precio": 15,
+        "stock": "9",
+        "id":7
+    },
+    {
+        "nombre": "jugo de naranja",
+        "precio": 40,
+        "stock": "10",
+        "id":8
+    },
+    {
+        "nombre": "coca cola",
+        "precio": 90,
+        "stock": "5",
+        "id":9
+    },
+    {
+        "nombre": "galletitas oreo",
+        "precio": 70,
+        "stock": "10",
+        "id":10
+    },
+    {
+        "nombre": "galletitas pepitos",
+        "precio": 60,
+        "stock": "3",
+        "id":11
+    },
+    {
+        "nombre": "aceite",
+        "precio": 50,
+        "stock": "7",
+        "id":12
+    }
+
+]
